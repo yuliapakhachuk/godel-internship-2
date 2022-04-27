@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "login": [
+    {
+      "login": "yulia.pakhachuk@gmail.com",
+      "password": "123"
+    },
+    {
+      "login": "qwer",
+      "password": "1234",
+      "id": "1"
+    },
+    {
+      "login": "1qaz",
+      "password": "12346",
+      "id": "2"
+    }
+  ]
+}

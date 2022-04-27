@@ -1,0 +1,35 @@
+.company-info,
+.submit-data {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+input {
+    width: 300px;
+}
+input[type=checkbox],
+input[type=radio] {
+    width: auto;
+}
+button {
+    width: 150px;
+}
+ul {
+   list-style: none;
+}
+option[value=50]::after {
+    content: '50';
+    border: 12px;
+    border-color: aquamarine;
+}
+option[value=0]::after {
+    content: "0";
+    color: black;
+    font-size: 10px;
+    border: 12px;
+    border-color: aquamarine;
+}
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+}

@@ -4,7 +4,7 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
-input {
+input, select {
     width: 300px;
 }
 input[type=checkbox],

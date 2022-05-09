@@ -1,9 +1,144 @@
-.company-info,
+/* -----------VARIABLES---------- */
+:root {
+    /* ---dark-mode--- */
+    --font-color1: #FDFDFD;
+    --font-color2: #949BB7;
+    --accent-color1: #EA51BC;
+    --accent-color2: #FFF500;
+    --bg-color1: #111217;
+    --bg-color2: #151A30;
+    --gradient-color: #7B20B5;
+}
+
+/* -------COMMON------- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--font-color1);
+    background-color: #111217;
+
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+p, h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.container {
+    max-width: 1242px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin: 0 auto;
+}
+.container-small {
+    max-width: 1010px;
+    padding-top: 60px;
+}
+
+/* -------HEADER-------- */
+.header {
+    background-color: var(--bg-color2);
+}
+.header-box {
+    display: flex;
+    align-items: center;
+}
+.logo-link {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: calc(58 / 48);
+
+    color: inherit;
+
+    margin-right: 132px;
+}
+.accent-logo {
+    color:var(--accent-color1);
+}
+.nav-list {
+    display: flex;
+    color: var(--font-color2);
+}
+.nav-item {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+.nav-item:not(:last-child) {
+margin-right: 32px;
+}
+.logo-box {
+    display: flex;
+    margin-left: auto;
+    /* margin-right: 112px; */
+}
+.header-icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--font-color2);
+
+    margin-right: 32px;
+}
+.user-photo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border-color: var(--font-color2);
+    border-width: 1px;
+
+    background-image: url(./images/Avatar.jpg);
+}
+/* ----------FORM---------- */
+.form-title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: calc(59 / 48);
+    letter-spacing: 1px;
+
+    margin-bottom: 12px;
+}
+.post-title {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(25 / 16);
+
+    color: var(--font-color2);
+}
+/* ----------FIRST FIELD------------ */
+.company-info {
+    display: flex;
+    justify-content: space-between;
+}
+.company-info-first,
+.company-info-second {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 392px;
+}
+
+.company-info-first > input,
+.company-info-second > input,
+.company-info-second > select {
+    width: 100%;
+}
+
+/* .company-info,
 .submit-data {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-}
+
+    padding-top: 60px;
+    padding-bottom: 48px;
+} */
 input, select {
     width: 300px;
 }

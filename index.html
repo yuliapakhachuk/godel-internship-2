@@ -40,191 +40,246 @@
     </header>
     <main>
         <div class="container">
-        <form action="http://localhost:3000/login/" method="post" class="container-small form">
-            <h1 class="form-title">Contact us</h1>
-            <p class="post-title">Need an experienced and skilled hand with custom IT projects? <br>
-            Fill out the form to get a free consultation.</p>
-            <fieldset class="company-info">
-                <div class="company-info-first">
-                    <label for="company-name">Your company name*</label>
-                    <input 
-                    type="text" 
-                    name="company-name" 
-                    id="company-name" 
-                    required>
-                    <label for="nature-business">Nature of Business*</label>
-                    <input 
-                    type="text" 
-                    name="nature-business" 
-                    id="nature-business" 
-                    required>
-                    <label for="registration-date">Data of registration</label>
-                    <input 
-                    type="date" 
-                    name="registration-date" 
-                    id="registration-date" 
-                    required>
-                </div>
-                <div class="company-info-second">
-                    <label for="registration-country">Country of registration*</label>
-                    <select   
-                    name="registration-country" 
-                    id="registration-country" 
-                    required>
-                        <option value="UK">United Kingdom</option>
-                        <option value="USA">USA</option>
-                        <option value="PL">Poland</option>
-                        <option value="CN">China</option>
-                    </select>
-                    <label for="adress">Address</label>
-                    <input 
-                    type="text" 
-                    name="adress" 
-                    id="adress" 
-                    required>
-                    <label for="postcode">Postcode</label>
-                    <input 
-                    type="text" 
-                    name="postcode" 
-                    id="postcode"
-                    pattern="[a-zA-Z]{2}\s\d{3}"
-                    title="Two first symbols are letters and three last are numbers with space between"
-                    required>
-                </div>
-            </fieldset>
-            <fieldset class="contact-person-data">
-                <label for="contact-name">Contact name</label>
-                <input 
-                type="text" 
-                name="contact-name" 
-                id="contact-name" 
-                required>
-                <label for="tel-number">Contact phone</label>
-                <input 
-                type="tel" 
-                name="tel-number" 
-                id="tel-number">
-                <label for="email">Email*</label>
-                <input 
-                type="email" 
-                name="email" 
-                id="email" 
-                required>
-                <label for="about-idea">
-                    Let’s talk about your idea
-                </label>
-                <textarea 
-                    name="about-idea" 
-                    id="about-idea" 
-                    cols="30" 
-                    rows="10" 
-                    maxlength="320"
-                    required>
-                </textarea>
-                <input 
-                type="range" 
-                name="range-smthg" 
-                min="0" 
-                max="100" 
-                step="10" 
-                list="tickmarks"/>
-                <datalist id="tickmarks">
-                    <option value="0" label="0">0</option>
-                    <option value="10"></option>
-                    <option value="20"></option>
-                    <option value="30"></option>
-                    <option value="40"></option>
-                    <option value="50"></option>
-                    <option value="60"></option>
-                    <option value="70"></option>
-                    <option value="80"></option>
-                    <option value="90"></option>
-                    <option value="100" label="100">100</option>
-                </datalist>
-            </fieldset>
-            <fieldset class="submit-data">
-                <label for="additional-file">
-                    Upload Additional file
-                    <input type="file" name="additional-file" id="additional-file">
-                </label>
-                <p>File size of your documents should not exceed 10MB</p>
-                <button type="submit">SUBMIT</button>
-                <label for="protect-data">
-                    <input type="radio" name="protect-data" id="protect-data">
-                    I want to protect my data by signing an NDA
-                </label>
-                <label for="type-of-protecting-data">
-                <input 
-                type="checkbox" 
-                name="type-of-protecting-data" 
-                id="type-of-protecting-data" 
-                required>
-                I want to protect my data by signing an NDA
-                </label>
-                <label for="type-of-protecting-data">
-                <input 
-                type="checkbox" 
-                name="type-of-protecting-data" 
-                id="type-of-protecting-data"
-                required >
-                I have read and accept the Terms and Conditions
-                </label>
-            </fieldset>
-
-<!-- --------------EXAMPLE------------------- -->
-                <input type="text" name="login" required>
-                <input type="text" name="password" required>
-                <input type="text" name="id" id="info" required>
-                
-                <button type="submit">submit</button>
-            </div>
-        </form>
-    </main>
-    <footer>
-        <div>
-            <h2>Career</h2>
-            <p>If you are interested in working at Logo send us your CV to careers@logo.com
-            and we can talk</p>
-            <ul>
-                <li class="social-link"></li>
-                <li class="social-link"></li>
-                <li class="social-link"></li>
-            </ul>
-        </div>
-        <div>
-            <h2>Offices</h2>
-            <ul>
-                <li>United States
-                of America
-                <br>
-                500 5th Avenue Suite 400, NY 10110</li>
-                <li>United Kingdom
-                <br>
-                High St, Bromley BR1 1DN</li>
-                <li>France
-                <br>
-                80 avenue des Terroirs de France, Paris</li>
-            </ul>
-        </div>
-        <div>
-            <h2>For Quick Inquiries</h2>
-            <ul>
-                <li class="contact-tel">
-                    +44 7911 123456
-                </li>
-                <li class="contact-tel">
-                    +1-212-456-7890
-                </li>
-            </ul>
-            <form action="get" class="subscribe-form">
-                <label for="join-to-news">
-                    Join our newsletter!
-                </label>
-                <input type="email" placeholder="Email">
-                <button type="submit">Галочка
-                    <!-- <svg> </svg> -->
-                </button>
+            <form action="http://localhost:3000/login/" method="post" class="container-small form">
+                <h1 class="form-title">Contact us</h1>
+                <p class="post-title">Need an experienced and skilled hand with custom IT projects? <br>
+                Fill out the form to get a free consultation.</p>
+                <fieldset class="company-info">
+                    <ul class="company-info-first">
+                        <li class="company-info-item">
+                            <label for="company-name">Your company name*</label>
+                            <input 
+                            type="text" 
+                            name="company-name" 
+                            id="company-name" 
+                            required>
+                        </li>
+                        <li class="company-info-item">
+                            <label for="nature-business">Nature of Business*</label>
+                            <input 
+                            type="text" 
+                            name="nature-business" 
+                            id="nature-business" 
+                            required>
+                        </li>
+                        <li class="company-info-item">
+                            <label for="registration-date">Data of registration</label>
+                            <input 
+                            type="date" 
+                            name="registration-date" 
+                            id="registration-date" 
+                            required>
+                        </li>
+                    </ul>
+                    <ul class="company-info-second">
+                        <li class="company-info-location">
+                            <label for="registration-country">Country of registration*</label>
+                            <select   
+                            name="registration-country" 
+                            id="registration-country" 
+                            required>
+                                <option value="UK">United Kingdom</option>
+                                <option value="USA">USA</option>
+                                <option value="PL">Poland</option>
+                                <option value="CN">China</option>
+                            </select>
+                        </li>
+                        <li class="company-info-location">
+                            <label for="adress">Address</label>
+                            <input 
+                            type="text" 
+                            name="adress" 
+                            id="adress" 
+                            required>
+                        </li>
+                        <li class="company-info-location">
+                            <label for="postcode">Postcode</label>
+                            <input 
+                            type="text" 
+                            name="postcode" 
+                            id="postcode"
+                            pattern="[a-zA-Z]{2}\s\d{3}"
+                            title="Two first symbols are letters and three last are numbers with space between"
+                            required>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="contact-person-data">
+                    <ul class="contact-person-data-first">
+                        <li class="contact-person-data-item">
+                            <label for="contact-name">Contact name</label>
+                            <input type="text" name="contact-name" id="contact-name" required>
+                        </li>
+                        <li class="contact-person-data-item">
+                            <label for="tel-number">Contact phone</label>
+                            <input type="tel" name="tel-number" id="tel-number">
+                        </li>
+                        <li class="contact-person-data-item">
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" id="email" required>
+                        </li>
+                    </ul>
+                    <ul class="contact-person-data-second">
+                        <li class="contact-comment-item">
+                            <label for="about-idea">
+                                Let’s talk about your idea
+                            </label>
+                            <textarea 
+                                name="about-idea" 
+                                id="about-idea" 
+                                maxlength="320"
+                                required>
+                            </textarea>
+                        </li>
+                        <li class="contact-comment-item">
+                            <input 
+                            type="range" 
+                            name="range-smthg" 
+                            min="0" 
+                            max="100" 
+                            step="10" 
+                            list="tickmarks"/>
+                            <datalist id="tickmarks">
+                                <option value="0" label="0">0</option>
+                                <option value="10"></option>
+                                <option value="20"></option>
+                                <option value="30"></option>
+                                <option value="40"></option>
+                                <option value="50"></option>
+                                <option value="60"></option>
+                                <option value="70"></option>
+                                <option value="80"></option>
+                                <option value="90"></option>
+                                <option value="100" label="100">100</option>
+                            </datalist>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="submit-data">
+                    <ul class="submit-firstbox">
+                        <li class="submit-firstbox-item">
+                            <label for="additional-file" class="download-field">
+                                Upload Additional file
+                                <input type="file" name="additional-file" id="additional-file">
+                            </label>
+                            <p class="download-comment">File size of your documents should not exceed 10MB</p>
+                        </li>
+                        <li class="submit-firstbox-item">
+                            <button type="submit" class="submit-btn">SUBMIT</button>
+                        </li>
+                        <li class="submit-firstbox-item">
+                            <label for="protect-data">
+                                <input type="radio" name="protect-data" id="protect-data">
+                                I want to protect my data by signing an NDA
+                            </label>
+                        </li>
+                    </ul>
+                    <ul class="submit-secondbox">
+                        <li class="submit-secondbox-item">
+                            <label 
+                            for="type-of-protecting-data1" 
+                            class="chekbox-submit">
+                                <input 
+                                type="checkbox" 
+                                name="type-of-protecting-data1" 
+                                id="type-of-protecting-data1" 
+                                required
+                                class="checker-input">
+                                <div class="custome-checkbox"></div>
+                                I want to protect my data by signing an NDA
+                            </label>
+                        </li>
+                        <li class="submit-secondbox-item">
+                            <label 
+                            for="type-of-protecting-data2" 
+                            class="chekbox-submit">
+                                <input 
+                                type="checkbox" 
+                                name="type-of-protecting-data2" 
+                                id="type-of-protecting-data2"
+                                required
+                                class="checker-input">
+                                <div class="custome-checkbox"></div>
+                                I have read and accept the Terms and Conditions
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+    <!-- --------------EXAMPLE------------------- -->
+                    <!-- <input type="text" name="login" required>
+                    <input type="text" name="password" required>
+                    <input type="text" name="id" id="info" required>
+                    <button type="submit">submit</button> -->
             </form>
+        </div>
+    </main>
+    <footer >
+        <div class="container footer-box">
+            <div class="career footer-contacts">
+                <div>
+                    <h2 class="footer-title">Career</h2>
+                    <p>If you are interested in working at Logo send us your CV to <span class="career-link">careers@logo.com</span>
+                    and we can talk</p>
+                </div>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <svg class="insta-icon">
+                            <use href="./images/icons.svg#instagram" width="20" height="20"></use>
+                        </svg>
+                    </li>
+                    <li class="social-item">
+                        <svg class="fb-icon">
+                            <use href="./images/icons.svg#facebook" width="12" height="23"></use>
+                        </svg>
+                    </li>
+                    <li class="social-item">
+                        <svg class="tlgr-icon">
+                            <use href="./images/icons.svg#telegram" width="19" height="17"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="offices footer-contacts">
+                <h2 class="footer-title">Offices</h2>
+                <ul class="offices-list">
+                    <li class="offices-item">United States
+                    of America
+                    <br>
+                    500 5th Avenue Suite 400, NY 10110</li>
+                    <li class="offices-item">United Kingdom
+                    <br>
+                    High St, Bromley BR1 1DN</li>
+                    <li class="offices-item">France
+                    <br>
+                    80 avenue des Terroirs de France, Paris</li>
+                </ul>
+            </div>
+            <div class="enquiriers footer-contacts">
+                <h2 class="footer-title">For Quick Inquiries</h2>
+                <ul class="contact-list">
+                    <li class="contact-tel">
+                        <svg class="flag-icon">
+                            <use href="./images/icons.svg#UK" width="20" height="12"></use>
+                        </svg>
+                        +44 7911 123456
+                    </li>
+                    <li class="contact-tel">
+                        <svg class="flag-icon">
+                            <use href="./images/icons.svg#USA" width="20" height="12"></use>
+                        </svg>
+                        +1-212-456-7890
+                    </li>
+                </ul>
+                <form action="get" class="subscribe-form">
+                    <label for="join-to-news">
+                        Join our newsletter!
+                    </label>
+                    <div class="footer-form-wrapper">
+                        <input type="email" placeholder="Email" class="footer-mail-input">
+                        <button type="submit" class="check-mark-btn"></button>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
 </body>

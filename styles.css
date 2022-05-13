@@ -145,8 +145,10 @@ margin-right: 32px;
 .contact-comment-item {
     display: flex;
     flex-direction: column;
-}
 
+    position: relative;
+}
+/* -----First condition style inputs, selects, textareass--------- */
 .company-info-item > input,
 .company-info-location > input,
 .company-info-location > select,
@@ -162,6 +164,53 @@ margin-right: 32px;
     line-height: calc(25 / 16);
     color: var(--font-color1);
 }
+/* ------Focus condition inp/select/txtarea---- */
+.company-info-item > input:focus,
+.company-info-location > input:focus,
+.company-info-location > select:focus,
+.contact-person-data-item > input:focus,
+.contact-comment-item > textarea:focus {
+
+    border: 1px solid var(--font-color1);
+    box-shadow: 0px 0px 20px rgba(234, 235, 241, 0.3);
+}
+/* .company-info-item>input::after:not(:placeholder-shown) {
+    display: inline-block;
+    content: "";
+    background-image: url(./images/cross.svg);
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+} */
+
+/* .company-info-item>input::after {
+    display: inline-block;
+    content: "";
+    background-image: url(./images/cross.svg);
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+} */
+.cross {
+    display: none;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 90%;
+    top: 50%;
+
+    background-image: url(./images/cross.svg);
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+}
+.company-info-item>input:not(:placeholder-shown) + .cross,
+.company-info-location>input:not(:placeholder-shown)+.cross,
+.contact-person-data-item>input:not(:placeholder-shown)+.cross,
+.contact-comment-item>textarea:not(:placeholder-shown)+.cross {
+    display: block;
+}
+
 .company-info-item:not(:last-child) > input,
 .company-info-location:not(:last-child) > input,
 .company-info-location > select,

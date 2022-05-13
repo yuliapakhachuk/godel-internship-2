@@ -51,8 +51,10 @@
                             <input 
                             type="text" 
                             name="company-name" 
-                            id="company-name" 
+                            id="company-name"
+                            placeholder=" " 
                             required>
+                            <div class="cross"></div>
                         </li>
                         <li class="company-info-item">
                             <label for="nature-business">Nature of Business*</label>
@@ -60,7 +62,9 @@
                             type="text" 
                             name="nature-business" 
                             id="nature-business" 
+                            placeholder=" " 
                             required>
+                            <div class="cross"></div>
                         </li>
                         <li class="company-info-item">
                             <label for="registration-date">Data of registration</label>
@@ -68,6 +72,7 @@
                             type="date" 
                             name="registration-date" 
                             id="registration-date" 
+                            placeholder=" " 
                             required>
                         </li>
                     </ul>
@@ -90,7 +95,10 @@
                             type="text" 
                             name="adress" 
                             id="adress" 
+                            placeholder=" "
                             required>
+                            <div class="cross"></div>
+
                         </li>
                         <li class="company-info-location">
                             <label for="postcode">Postcode</label>
@@ -100,7 +108,9 @@
                             id="postcode"
                             pattern="[a-zA-Z]{2}\s\d{3}"
                             title="Two first symbols are letters and three last are numbers with space between"
+                            placeholder=" "
                             required>
+                            <div class="cross"></div>
                         </li>
                     </ul>
                 </fieldset>
@@ -108,15 +118,18 @@
                     <ul class="contact-person-data-first">
                         <li class="contact-person-data-item">
                             <label for="contact-name">Contact name</label>
-                            <input type="text" name="contact-name" id="contact-name" required>
+                            <input placeholder=" " type="text" name="contact-name" id="contact-name" required>
+                            <div class="cross"></div>
                         </li>
                         <li class="contact-person-data-item">
                             <label for="tel-number">Contact phone</label>
-                            <input type="tel" name="tel-number" id="tel-number">
+                            <input placeholder=" " type="tel" name="tel-number" id="tel-number">
+                            <div class="cross"></div>
                         </li>
                         <li class="contact-person-data-item">
                             <label for="email">Email*</label>
-                            <input type="email" name="email" id="email" required>
+                            <input placeholder=" " type="email" name="email" id="email" required>
+                            <div class="cross"></div>
                         </li>
                     </ul>
                     <ul class="contact-person-data-second">

@@ -3,18 +3,28 @@
     /* ---dark-mode--- */
     --font-color1: #FDFDFD;
     --font-color2: #949BB7;
+    --font-color-footer: #FDFDFD;
+    --border-color: #949BB7;
     --accent-color1: #EA51BC;
     --accent-color2: #FFF500;
     --bg-color1: #111217;
     --bg-color2: #151A30;
+    --header-bg-color: #151A30;
     --gradient-color: #7B20B5;
 }
+        /* ---light-mode--- */
+        /* --font-color1: #535763; +++
+        --font-color2: #9BA2BC; +++
+        --accent-color1: #6759FF; +++
+        --bg-color1: #F9F9FC; +++
+        --bg-color2: #151A30;
+        --gradient-color: #7B20B5; */
 
 /* -------COMMON------- */
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--font-color1);
-    background-color: #111217;
+    background-color: var(--bg-color1);
 
     margin: 0;
     box-sizing: border-box;
@@ -53,7 +63,7 @@ fieldset {
 
 /* -------HEADER-------- */
 .header {
-    background-color: var(--bg-color2);
+    background-color: var(--header-bg-color);
 }
 .header-box {
     display: flex;
@@ -178,7 +188,7 @@ margin-right: 32px;
 .contact-person-data-item > input,
 .contact-comment-item > textarea {
     border-radius: 12px;
-    border: 1px solid var(--font-color2);
+    border: 1px solid var(--border-color);
     background-color: var(--bg-color1);
     outline: none;
     
@@ -200,7 +210,7 @@ margin-right: 32px;
 .company-info-location > select:focus,
 .contact-person-data-item > input:focus,
 .contact-comment-item > textarea:focus {
-    border: 1px solid var(--font-color1);
+    border: 1px solid var(--border-color);
     box-shadow: 0px 0px 20px rgba(234, 235, 241, 0.3);
 }
 /* VALID inp/select/txtarea */
@@ -300,7 +310,7 @@ margin-right: 32px;
     margin-bottom: 12px;
     padding: 40px 90px;
 
-    border: 1px dashed var(--font-color2);
+    border: 1px dashed var(--border-color);
     border-radius: 12px;
 
     font-weight: 500;
@@ -351,12 +361,12 @@ input[id=additional-file] {
     font-size: 24px;
     line-height: calc(29 / 24);
     letter-spacing: 1px;
-    color: var(--font-color1);
+    color: #FDFDFD;
 
     background-image: linear-gradient(
         136.51deg,
-        #7B20B5 0%,
-        #EA51BC 94.14%);
+        var(--gradient-color) 0%,
+        var(--accent-color1) 94.14%);
     border-radius: 8px;
     border: none;
 
@@ -393,7 +403,7 @@ input[id=additional-file] {
     margin-right: 12px;
     
     border-radius: 4px;
-    border: 1px solid var(--font-color1);
+    border: 1px solid var(--border-color);
     background-color: var(--bg-color1);
 }
 
@@ -431,7 +441,7 @@ input[id=additional-file] {
     margin-right: 12px;
 
     border-radius: 50%;
-    border: 1px solid var(--font-color1);
+    border: 1px solid var(--border-color);
     background-color: var(--bg-color1);
 }
 .custome-radio::after {
@@ -455,6 +465,7 @@ input[id=additional-file] {
 }
 
 footer {
+    color: var(--font-color-footer);
     background-color: var(--bg-color2);
 }
 .footer-box {
@@ -494,7 +505,7 @@ footer {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid var(--font-color2);
+    border: 1px solid var(--border-color);
 }
 .social-item:not(:last-child) {
     margin-right: 24px;
@@ -539,7 +550,7 @@ footer {
     margin-right: 12px;
 
     border-radius: 8px;
-    border: 1px solid var(--font-color2);
+    border: 1px solid var(--border-color);
     background-color: var(--bg-color2);
 
     font-weight: 500;
@@ -556,6 +567,6 @@ footer {
     background-image: 
                         url(./images/done.svg),
                         linear-gradient(136.51deg,
-                        #7B20B5 0%,
-                        #EA51BC 94.14%);
+                        var(--gradient-color) 0%,
+                        var(--accent-color1) 94.14%);
 }

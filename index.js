@@ -13,8 +13,8 @@ function turnOnDarkMode() {
     body.removeAttribute("style");
 }
 
-const timeNight = setTime(19, 0, 0, 0);
 const timeDay = setTime(6, 0, 0, 0);
+const timeNight = setTime(19, 0, 0, 0);
 
 function setTime(hour, min, sec, mlsec) { 
     const timeX = new Date();
